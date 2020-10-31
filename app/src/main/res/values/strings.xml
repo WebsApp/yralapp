@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Viral</string>
+    <string name="base_url">https://webappssoft.com/theutredns/</string>
+    <string name="say_something">Say something&#8230;</string>
+    <string name="ob_header1">Fun with Video &amp; Share</string>
+    <string name="ob_header2">Connect with Friends</string>
+    <string name="ob_header3">Discover Stores in Click</string>
+    <string name="fb_app_id">257908962002155</string>
+    <string name="ob_get_started">LET\'S GET STARTED</string>
+    <string name="client_id">your_client_id</string>
+    <string name="callback_url">https://instagram.com/</string>
+    <string name="ibase_url">https://api.instagram.com/</string>
+    <string name="twitter_consumer_key" translatable="false">TNYZ5g4swtb6DdxXS2y8eVWG0</string>
+    <string name="twitter_consumer_secret" translatable="false">P7Ud7a6JwPJzRvTLiCwK2Lkw87Tl3e14zLCppfkgq6puxnUEcX</string>
+    <string name="ob_desc1">\"Share application video make you status with amazing video status\"</string>
+    <string name="ob_desc2">\"Discover Amazing facts with Viral app with friends &amp; family\"</string>
+    <string name="ob_desc3">\"Post stories &amp; see what going around you Get All time update in single click with your world\"</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="pref_group_profile">PROFILE</string>
+    <string name="pref_title_name">Name</string>
+    <string name="login_id">login_id</string>
+    <string name="pic">pic</string>
+    <string name="login_status">0</string>
+    <string name="date">date</string>
+    <string name="delete">By deleting your account, you will remove everything you have ever put on Viral— profile information, photos, status updates, timeline posts</string>
+    <string name="pref_title_email">Email</string>
+    <string name="social">Social media are interactive computer-mediated technologies that facilitate the creation or sharing of information, ideas, career interests and other forms of expression via virtual communities and networks.[1][2] The variety of stand-alone and built-in social media services currently available introduces challenges of definition; however, there are some common features:[2]
+
+    Social media are interactive Web 2.0 Internet-based applications.
+    User-generated content such as text posts or comments, digital photos or videos, and data generated through all online interactions, is the lifeblood of social media.
+    Users create service-specific profiles and identities for the website or app that are designed and maintained by the social media organization.
+    Social media facilitate the development of online social networks by connecting a users profile with those of other individuals or groups.
+
+Users usually access social media services via web-based apps on desktops and laptops, or download services that offer social media functionality to their mobile devices (e.g., smartphones and tablets). As users engage with these electronic services, they create highly interactive platforms through which individuals, communities, and organizations can share, co-create, discuss, participate and modify user-generated content or self-curated content posted online.
+
+Networks formed through social media change the way groups of people interact and communicate or stand with the votes. They "introduce substantial and pervasive changes to communication between organizations, communities, and individuals."[1] These changes are the focus of the emerging fields of technoself studies. Social media differ from paper-based media (e.g., magazines and newspapers) and traditional electronic media such as TV broadcasting, Radio broadcasting in many ways, including quality,[5] reach, frequency, interactivity, usability, immediacy, and performance. Social media outlets operate in a dialogic transmission system (many sources to many receivers).some of the most popular social media websites, with over 100 million registered users, include Facebook , YouTube, TikTok, WeChat, Instagram, QQ, QZone, Weibo, Twitter, Tumblr, Telegram, Baidu Tieba, LinkedIn, WhatsApp, LINE, Snapchat, Pinterest, Viber, VK, Reddit, Discord and more.
+
+</string>
+    <string name="privacy">
+A Privacy Policy is a statement or a legal document that states how a company or website collects, handles and processes data of its customers and visitors. It explicitly describes whether that information is kept confidential, or is shared with or sold to third parties.
+
+Personal information about an individual may include the following:
+
+    Name
+    Address
+    Email
+    Phone number
+    Age
+    Sex
+    Marital status
+    Race
+    Nationality
+    Religious beliefs
+
+For example, an excerpt from Pinterests Privacy Policy agreement clearly describes the information Pinterest collects from its users as well as from any other source that users enable Pinterest to gather information from. The information that the user voluntarily gives includes names, photos, pins, likes, email address, and/or phone number etc., all of which is regarded as personal information.</string>
+    <string name="pref_title_phone">Phone Number</string>
+    <string name="pref_title_address">Address</string>
+    <string name="pref_title_gender">Gender</string>
+    <string name="default_your_name">Your Name</string>
+    <string name="default_your_email">your.email@gmail.com</string>
+    <string name="default_your_phone">+628123456789</string>
+    <string name="default_your_address">Your Address</string>
+    <string name="action_settings">Settings</string>
+    <string name="about">About</string>
+    <string name="login_success">login success</string>
+    <string name="login">LOGIN</string>
+    <string name="Username">Email</string>
+    <string name="Password">Password</string>
+    <string name="forgot_your_password">Forgot your password ?</string>
+    <string name="go">GO</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="next">NEXT</string>
+    <string name="register">REGISTER</string>
+
+    <string name="hint_username">Enter a new username</string>
+    <string name="hint_email_reset">Enter your email</string>
+    <string name="enter_group_name">Enter group name</string>
+</resources>

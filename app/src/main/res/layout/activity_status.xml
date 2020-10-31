@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null" />
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/video"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_play"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <View
+            android:id="@+id/reverse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <View
+            android:id="@+id/middle"
+            android:layout_width="0dp"
+            android:visibility="invisible"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <View
+            android:id="@+id/skip"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_margin="8dp"
+        android:background="@color/grey"
+        android:orientation="vertical">
+
+        <jp.shts.android.storiesprogressview.StoriesProgressView
+            android:id="@+id/stories"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/storyUserImage"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/storyUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mike"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/storyProgress"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:textSize="18dp"
+            android:text=""
+            android:padding="@dimen/dimen5"
+            android:drawableLeft="@drawable/ic_remove_red_eye_black_24dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+
+</FrameLayout>
+
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.StatusActivity">
+<ImageView
+    android:layout_width="match_parent"
+    android:src="@drawable/status"
+  android:visibility="gone"
+    android:scaleType="centerCrop"
+    android:layout_height="match_parent"></ImageView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerview"
+        android:visibility="gone"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>-->

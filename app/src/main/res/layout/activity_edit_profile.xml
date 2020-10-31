@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EditProfileActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:text="Edit Profile"
+                    android:textSize="18dp"
+                    android:id="@+id/back"
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/ic_back"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="60dp"></TextView>
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="90dp"
+                    android:src="@drawable/logo_3"
+                    android:layout_height="40dp"></ImageView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userImage"
+                    android:layout_width="93dp"
+                    android:layout_height="102dp"
+                    android:layout_centerInParent="true"
+
+                    android:src="@drawable/post" />
+                <ImageView
+                    android:id="@+id/pickImage"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-20dp"
+                    android:layout_below="@id/userImage"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/camera_user" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@drawable/editbox_circle"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:hint="Name"
+                android:id="@+id/edit_fname"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_marginRight="30dp"
+
+                android:layout_height="wrap_content">
+            </EditText>
+            <EditText
+                android:visibility="gone"
+                android:paddingLeft="5dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/editbox_circle"
+                android:layout_marginLeft="30dp"
+
+                android:textSize="14sp"
+                android:hint="Last Name"
+                android:id="@+id/edit_lname"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+            </EditText>
+            <EditText
+                android:paddingLeft="5dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/editbox_circle"
+                android:layout_marginLeft="30dp"
+                android:hint="Current City"
+                android:layout_marginTop="15dp"
+                android:id="@+id/edit_city"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_marginRight="30dp"
+
+                android:layout_height="wrap_content">
+            </EditText>
+            <TextView
+                android:id="@+id/edit_dob"
+                android:textSize="14sp"
+                android:drawableRight="@drawable/ic_date"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/editbox_circle"
+                android:layout_marginLeft="30dp"
+                android:hint="Date of Birth"
+                android:paddingLeft="22dp"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:padding="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <EditText
+                android:id="@+id/edit_bio"
+                android:textSize="14sp"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/editbox_circle"
+                android:layout_marginLeft="30dp"
+                android:hint="Bio"
+                android:lines="5"
+                android:maxLines="5"
+                android:maxLength="300"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/edit_pincode"
+                android:textSize="14sp"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/editbox_circle"
+                android:layout_marginLeft="30dp"
+                android:hint="pincode"
+                android:maxLength="6"
+                android:inputType="number"
+                android:paddingLeft="22dp"
+                android:layout_marginRight="30dp"
+                android:padding="@dimen/tendp"
+                android:layout_height="wrap_content">
+
+            </EditText>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:paddingLeft="22dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:id="@+id/male"
+                    android:text="Male"
+                    android:checked="true"
+                    android:layout_height="wrap_content"></RadioButton>
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:text="Female"
+                    android:layout_weight=".3"
+                    android:id="@+id/female"
+                    android:layout_height="wrap_content"></RadioButton>
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:text="Other"
+                    android:layout_weight=".3"
+                    android:id="@+id/other"
+                    android:layout_height="wrap_content"></RadioButton>
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/btnupdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/gradient_intro_button"
+                android:text="Update Profile"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16dp"></Button>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

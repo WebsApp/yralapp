@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/border"
+    android:layout_margin="@dimen/dimen5"
+    android:layout_width="160dp"
+    android:layout_height="120dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@color/lightblue"
+        android:id="@+id/cover_pic">
+    </ImageView>
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="20dp"
+        android:src="@drawable/ic_close_red"
+        android:layout_alignParentRight="true"
+        android:layout_height="20dp"></ImageView>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:id="@+id/profile_pic"
+        android:src="@drawable/user1"
+        android:layout_height="match_parent"></de.hdodenhof.circleimageview.CircleImageView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+      android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="ANkit Mishra"
+            android:id="@+id/txt_username"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:maxLength="10"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/location"
+            android:textSize="14dp"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+       android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+          android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight=".5"
+        android:id="@+id/view"
+        android:textSize="12dp"
+        android:layout_gravity="center"
+       android:text="See more"
+        android:padding="@dimen/dimen5"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:id="@+id/follow"
+            android:textSize="12dp"
+            android:padding="@dimen/dimen5"
+            android:background="@color/black"
+           android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="visible"
+            android:text="Follow"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

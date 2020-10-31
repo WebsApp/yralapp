@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/id1"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:layout_height="wrap_content"></ImageView>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Phone Login"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_height="60dp">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Plaese Enter Phone No.You Will recieve a code to login in Viral via phone."
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/edit_phone"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="20dp"
+            android:inputType="number"
+            android:maxLength="10"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/editbox_circle"
+            android:textColor="@color/black"
+            android:hint="Enter Phone No"
+            android:layout_height="40dp"></EditText>
+        <Button
+            android:layout_width="match_parent"
+            android:text="Get OTP"
+            android:layout_marginTop="30dp"
+            android:id="@+id/submit"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/gradient_intro_button"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content">
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id2"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/verification"
+            android:layout_height="wrap_content"></ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="OTP SENT YOUR PHONE NO"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/texts"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="We have sent you OTP on your Register  Phone No."
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/text"
+            android:textColor="@color/lightgrey"
+            android:layout_below="@+id/texts"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"></TextView>
+
+        <com.goodiebag.pinview.Pinview
+            android:layout_below="@+id/text"
+            android:id="@+id/email_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:pinWidth="40dp"
+            app:pinHeight="40dp"
+            app:pinLength="6"
+            app:cursorVisible="false"
+            app:forceKeyboard="true"
+            app:hint="0"
+            app:inputType="number"
+            app:password="false"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/otpsubmit"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/dimen5"
+            android:background="@drawable/gradient_intro_button"
+            android:layout_below="@+id/otp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+</RelativeLayout>

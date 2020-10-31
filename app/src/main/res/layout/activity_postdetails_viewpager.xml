@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/light_color"
+    tools:context=".activity.QueryActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginBottom="50dp"
+    android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/id1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:id="@+id/back"
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/ic_back"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="50dp"></TextView>
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="60dp"
+                    android:src="@drawable/logo_3"
+                    android:layout_height="40dp"></ImageView>
+            </RelativeLayout>
+            <ImageView
+                android:layout_below="@id/header"
+                android:layout_width="match_parent"
+                android:src="@drawable/post"
+                android:id="@+id/image"
+                android:visibility="gone"
+                android:layout_height="match_parent"></ImageView>
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:id="@+id/viewpager"
+                android:layout_below="@id/image"
+                android:layout_marginBottom="50dp"
+                android:layout_height="wrap_content">
+
+            </androidx.viewpager.widget.ViewPager>
+            <VideoView
+                android:layout_below="@id/header"
+                android:layout_width="match_parent"
+                android:id="@+id/videoview"
+                android:visibility="gone"
+                android:layout_height="300dp"></VideoView>
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="16dp"
+                android:layout_below="@id/viewpager"
+                android:id="@+id/text_desc"
+                android:text="0000"
+                android:padding="@dimen/dimen5"
+                android:layout_height="wrap_content"></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_below="@id/text_desc"
+                android:id="@+id/recyclerview"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="30dp"
+                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+</LinearLayout>
+        <LinearLayout
+            android:id="@+id/commentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="4dp"
+
+            android:visibility="gone"
+            android:background="@color/lightgrey"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_picture"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <EditText
+                android:id="@+id/add_a_comment_edittext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="Add a Comment"
+                android:textColorHint="@color/black"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/btn_post_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_send_black_24dp" />
+
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/cv"
+            android:layout_margin="4dp"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen5"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/like"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/favorite_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></ImageView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:text="0"
+                    android:id="@+id/liker"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="@dimen/dimen5"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:text="0"
+                    android:layout_marginTop="@dimen/dimen5"
+                    android:id="@+id/comment"
+                    android:paddingLeft="20dp"
+                    android:drawableLeft="@drawable/comment"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"></TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:text="0"
+                    android:layout_marginTop="@dimen/dimen5"
+                    android:id="@+id/share"
+                    android:paddingLeft="20dp"
+                    android:drawableLeft="@drawable/share"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"></TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</RelativeLayout>

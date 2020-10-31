@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/light_color"
+    tools:context=".activity.QueryActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/id1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:id="@+id/back"
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/ic_back"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="50dp"></TextView>
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="60dp"
+                    android:src="@drawable/logo_3"
+                    android:layout_height="40dp"></ImageView>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="16dp"
+            android:layout_below="@id/id1"
+            android:id="@+id/text_desc"
+            android:padding="@dimen/dimen5"
+            android:layout_height="wrap_content"></TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_below="@id/text_desc"
+            android:id="@+id/recyclerview"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="30dp"
+            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+        <LinearLayout
+            android:id="@+id/commentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="4dp"
+            android:visibility="visible"
+            android:background="@color/lightgrey"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_picture"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <com.github.ankushsachdeva.emojicon.EmojiconEditText
+                android:id="@+id/add_a_comment_edittext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="Add a Comment"
+                android:textColorHint="@color/black"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/btn_post_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_send_black_24dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

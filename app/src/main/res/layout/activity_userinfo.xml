@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity.UserinfoActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.UserinfoActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/user_header"
+
+        android:layout_height="150dp">
+    </ImageView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_height="51dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/update_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/calendar" />
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="@null"
+                android:focusedByDefault="false"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:layout_gravity="center"
+                android:hint="Enter your Date of Birth"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/seceondry_color"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_height="51dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/l_city"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/location" />
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:background="@null"
+                android:focusedByDefault="false"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:layout_gravity="center"
+                android:hint="Enter Your City"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/seceondry_color"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/l_bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_gravity="top"
+                android:src="@drawable/bio" />
+            <EditText
+                android:id="@+id/bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxLines="10"
+                android:lines="8"
+                android:maxLength="300"
+                android:inputType="textMultiLine"
+                android:layout_gravity="center"
+                android:hint="Enter About Yourself"
+                android:gravity="top"
+                android:padding="@dimen/dimen5"
+                android:textColor="@color/black"
+                android:textColorHint="@color/seceondry_color"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen5"
+        android:layout_margin="@dimen/dimen5"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+            android:text="Please select your language preference"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+
+            android:text="see more"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:id="@+id/tv_language"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/language"
+        android:layout_margin="@dimen/dimen5"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/dimen5"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+            android:text="Please know us your interest"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:id="@+id/tv_interest"
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_"
+             android:layout_gravity="right"
+            android:gravity="right"
+            android:text="see more"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/interest"
+        android:layout_margin="@dimen/dimen5"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/gradient_intro_button"
+            android:layout_marginBottom="24dp"
+            android:text="Next"
+            android:id="@+id/next"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            />
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="true"
+    tools:context=".activity.AddActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:text="Add Lost"
+            android:textSize="18dp"
+            android:id="@+id/back"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/ic_back"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_height="60dp"></TextView>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="90dp"
+            android:src="@drawable/logo"
+            android:layout_height="60dp"></ImageView>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/root"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dimen5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:civ_border_width="2dp"
+            app:civ_border_overlay="true"
+            android:src="@drawable/c1"
+            android:visibility="gone"
+            android:id="@+id/image">
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tv_name"
+                android:textSize="14dp"
+                android:visibility="gone"
+                android:layout_gravity="left"
+                android:text="Ankit Mishra"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"></TextView>
+            <EditText
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/dimen5"
+                android:background="@drawable/border"
+                android:maxLength="65"
+                android:id="@+id/et_title"
+                android:hint="Lost Item Title"
+                android:gravity="top"
+                android:layout_height="wrap_content"></EditText>
+            <LinearLayout
+                android:layout_marginTop="@dimen/dimen5"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/upload"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/upload"
+                    android:layout_height="100dp"></ImageView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/ic_insert_photo_black_24dp"
+                        android:text="Photos"
+                        android:visibility="gone"
+                        android:layout_marginLeft="@dimen/dimen5"
+                        android:paddingRight="10dp"
+                        android:background="@drawable/bgbtnguide"
+                        android:id="@+id/button_photos"></Button>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:visibility="gone"
+                    android:layout_marginLeft="@dimen/dimen5"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:text="Add Video"
+                        android:background="@drawable/bgbtnguide"
+                        android:id="@+id/buttonvideo"
+                        android:paddingRight="10dp"
+                        android:drawableRight="@drawable/ic_play_circle_filled_black_24dp"
+                        android:layout_height="wrap_content"></Button>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:text="Feeling"
+                        android:id="@+id/feeling"
+                        android:layout_marginLeft="@dimen/dimen5"
+                        android:background="@drawable/bgbtnguide"
+                        android:paddingRight="10dp"
+                        android:layout_marginRight="@dimen/dimen5"
+                        android:drawableRight="@drawable/ic_face_black_24dp"
+                        android:layout_height="wrap_content"></Button>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/tendp"
+                android:layout_height="wrap_content">
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:id="@+id/scrollview"
+                    android:visibility="gone"
+                    android:nestedScrollingEnabled="true"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/lnrImages"
+                        android:layout_height="wrap_content">
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <VideoView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    android:src="@mipmap/ic_launcher"
+                    android:id="@+id/vv"/>
+            </RelativeLayout>
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/dimen5"
+                android:background="@drawable/border"
+                android:lines="3"
+                android:maxLength="1000"
+                android:id="@+id/et_text"
+                android:hint="Description"
+                android:gravity="top"
+                android:layout_height="wrap_content"></EditText>
+            <LinearLayout
+                android:layout_above="@+id/id1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="match_parent"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:max="100"
+                    tools:progress="0"
+                    android:layout_height="30dp"></ProgressBar>
+                <TextView
+                    android:id="@+id/progress"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/spinner"
+        android:hint="Enter Contact Details"
+        android:maxLines="5"
+        android:lines="3"
+        android:layout_height="wrap_content"></EditText>
+
+</LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_margin="@dimen/dimen5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Time Limit"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24 hours"
+            android:id="@+id/radioButton"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+                android:textColor="@color/grey"
+            android:textSize="10dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 week"
+                android:id="@+id/radioButton2"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="10dp"
+
+                android:textColor="@color/grey"
+                android:layout_weight="0.13" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Month"
+                android:id="@+id/radioButton3"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:textSize="10dp"
+                android:textColor="@color/grey"
+                android:layout_weight="0.13" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="@dimen/dimen5"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Age Limit"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <SeekBar
+                android:layout_width="match_parent"
+                android:progress="18"
+                android:max="60"
+                android:min="10"
+                android:id="@+id/seekbar"
+                android:layout_height="wrap_content"></SeekBar>
+
+        </LinearLayout>
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_margin="@dimen/dimen5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="public this Post" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_margin="@dimen/dimen5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Allow to comment" />
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_margin="@dimen/dimen5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show my location" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/location"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="20dp"
+
+                android:layout_marginLeft="@dimen/dimen5"
+                android:src="@drawable/user_tag"
+                android:layout_height="20dp"></ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tag"
+                android:text="Tag User"
+                android:layout_marginLeft="@dimen/dimen5"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chkTerms"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/lblTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="i have read and agreed the terms and conditions"
+                android:textColor="@color/tw__composer_red"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/gradient_intro_button"
+            android:layout_marginBottom="10dp"
+            android:text="Submit Lost"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="22dp"
+            android:id="@+id/button"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:text="Save for later"
+            android:background="@drawable/white_ripple"
+            android:id="@+id/schedule"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

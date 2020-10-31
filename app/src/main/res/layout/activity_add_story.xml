@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddStoryActivity">
+
+
+      <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/iv_image"
+          android:visibility="gone"
+        android:layout_above="@id/id1"
+        android:layout_marginBottom="60dp"
+        android:layout_height="match_parent"></ImageView>
+    <VideoView
+        android:layout_width="match_parent"
+        android:id="@+id/vv_video"
+        android:visibility="gone"
+        android:layout_above="@id/id1"
+        android:layout_marginBottom="60dp"
+        android:layout_height="wrap_content"></VideoView>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollview"
+        android:visibility="visible"
+        android:layout_above="@id/id1"
+        android:layout_marginBottom="60dp"
+        android:nestedScrollingEnabled="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/lnrImages"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+    </HorizontalScrollView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:id="@+id/back"
+        android:layout_margin="20dp"
+        android:foregroundGravity="left"
+        android:layout_height="wrap_content"></ImageView>
+
+
+    <LinearLayout
+        android:layout_above="@+id/id1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:max="100"
+            tools:progress="0"
+            android:layout_height="30dp"></ProgressBar>
+        <TextView
+            android:id="@+id/progress"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/id1"
+    android:layout_marginBottom="60dp"
+    android:layout_alignParentBottom="true"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight=".5"
+        android:src="@drawable/gallery"
+        android:id="@+id/gallery"
+        android:layout_height="60dp"></ImageView>
+    <LinearLayout
+        android:layout_width="1dp"
+        android:background="@color/black"
+        android:layout_height="match_parent"></LinearLayout>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight=".5"
+        android:id="@+id/video"
+        android:src="@drawable/add_video"
+        android:layout_height="60dp"></ImageView>
+</LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="@dimen/dimen5"
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:text="Send Story"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:background="@drawable/gradient_intro_button"
+        android:layout_height="wrap_content"></Button>
+</RelativeLayout>

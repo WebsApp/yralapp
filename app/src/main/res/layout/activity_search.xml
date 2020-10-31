@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="90dp"
+            android:src="@drawable/logo"
+            android:id="@+id/image"
+            android:layout_height="50dp"></ImageView>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="60dp"
+            android:layout_marginRight="100dp"
+            android:src="@drawable/ic_baseline_keyboard_voice_24"
+            android:id="@+id/image_search"
+            android:layout_height="35dp"></ImageView>
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:text="Viral Social"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:id="@+id/search"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_height="60dp"></androidx.appcompat.widget.SearchView>
+
+    </RelativeLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_below="@id/toolbar"
+        style="@style/Widget.Design.TabLayout"
+        app:tabTextColor="@color/black"
+        android:background="@color/light_color"
+        app:tabBackground="@drawable/tab_color_back"
+        app:tabSelectedTextColor="@color/basecolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:tabGravity="center"
+        app:tabMode="scrollable" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_below="@id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/error"
+        android:visibility="gone"
+        android:id="@+id/error"
+        android:layout_height="match_parent"></ImageView>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/parentShimmerLayout"
+        app:duration="700"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <include            android:id="@+id/id"    layout="@layout/home_item_shimmer"></include>
+            <include            android:id="@+id/id"    layout="@layout/home_item_shimmer"></include>
+            <include            android:id="@+id/id"    layout="@layout/home_item_shimmer"></include>
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/imageview"
+        android:visibility="gone"
+        android:src="@drawable/no_post"
+        android:layout_height="wrap_content"></ImageView>
+</RelativeLayout>

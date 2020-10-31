@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/border"
+    android:layout_margin="@dimen/dimen5"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/video"
+        android:id="@+id/image">
+    </ImageView>
+    <ImageView
+        android:id="@+id/play"
+        android:layout_centerInParent="true"
+        android:layout_width="60dp"
+        android:src="@drawable/play"
+        android:layout_height="60dp"></ImageView>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/image"
+        android:orientation="horizontal"
+        android:layout_marginTop="-30dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight=".5"
+            android:id="@+id/textView"
+            android:textSize="14dp"
+            android:layout_gravity="center"
+            android:text="Ankit Mishra"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/user"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:id="@+id/text_desc"
+            android:textSize="14dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
