@@ -22,7 +22,9 @@
     <color name="colorIndivateTab">#FFFFFF</color>
      <color name="colorCardView">#f7f7f7</color>
     <color name="grey_200">#EEEEEE</color>
+    <color name="grey_20">#5CEEEEEE</color>
     <color name="grey_500">#a4a4a4</color>
+    <color name="colorgrayforedittext">#E9F5FF</color>
     <color name="grey_100">#F5F5F5</color>
     <color name="grey_800">#212121</color>
     <color name="gradient_start_color">#28166F</color>

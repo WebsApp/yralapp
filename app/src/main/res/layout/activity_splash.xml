@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grey_20"
     tools:context=".activity.SplashActivity">
 <ImageView
     android:id="@+id/image"
@@ -12,16 +13,19 @@
     android:layout_centerInParent="true"
     android:layout_height="100dp"></ImageView>
     <ProgressBar
+        android:indeterminateTint="@color/gradient_end_color"
         android:layout_width="match_parent"
         android:layout_below="@id/image"
         android:id="@+id/progress_bar"
-        android:layout_height="wrap_content"></ProgressBar>
+        android:layout_marginTop="90dp"
+        android:layout_height="wrap_content">
+
+    </ProgressBar>
     <TextView
         android:layout_width="wrap_content"
-        android:textColor="#DCDCDC"
-        android:visibility="gone"
+        android:textColor="@color/grey_500"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="Design &amp; Developed  by Webapps"
+        android:text="@string/desingdeveled"
         android:layout_height="wrap_content"></TextView>
 </RelativeLayout>

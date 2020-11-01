@@ -85,7 +85,7 @@
                 android:background="@drawable/border"
                 android:maxLength="65"
                 android:id="@+id/et_title"
-                android:hint="Title"
+                android:hint="@string/challange_title"
                 android:gravity="top"
                 android:layout_height="wrap_content"></EditText>
             <LinearLayout
@@ -97,7 +97,7 @@
                     android:id="@+id/upload"
                     android:layout_width="match_parent"
                     android:src="@drawable/upload"
-                    android:layout_height="100dp"></ImageView>
+                    android:layout_height="150dp"></ImageView>
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_weight=".3"
@@ -186,7 +186,7 @@
                 android:lines="3"
                 android:maxLength="1000"
                 android:id="@+id/et_text"
-                android:hint="Description"
+                android:hint="@string/Description_activty_found"
                 android:gravity="top"
                 android:layout_height="wrap_content"></EditText>
             <LinearLayout
@@ -289,20 +289,23 @@
         android:layout_margin="@dimen/dimen5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="public this Post" />
+        android:textColor="@color/grey"
+        android:text="@string/public_sipe_post_acitivity" />
 
     <Switch
         android:id="@+id/switch1"
         android:layout_margin="@dimen/dimen5"
+        android:textColor="@color/grey"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Allow to comment" />
+        android:text="@string/allow_commnet_sipe_post_acitivity" />
     <Switch
         android:id="@+id/switch3"
         android:layout_margin="@dimen/dimen5"
+        android:textColor="@color/grey"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show my location" />
+        android:text="@string/location_commnet_sipe_post_acitivity" />
         <TextView
             android:layout_width="match_parent"
             android:id="@+id/location"
@@ -323,7 +326,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:id="@+id/tag"
-                android:text="Tag User"
+                android:text="@string/tag_post_acitivity"
+                android:textColor="@color/grey"
                 android:layout_marginLeft="@dimen/dimen5"
                 android:layout_height="wrap_content"></TextView>
         </LinearLayout>
@@ -338,6 +342,9 @@
             <CheckBox
                 android:id="@+id/chkTerms"
                 android:checked="true"
+                android:buttonTint="@color/tw__composer_red"
+                app:buttonTint="@color/tw__composer_red"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -345,7 +352,7 @@
                 android:id="@+id/lblTerms"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="i have read and agreed the terms and conditions"
+                android:text="@string/ihavered"
                 android:textColor="@color/tw__composer_red"
                 android:textSize="10dp" />
 
@@ -365,7 +372,7 @@
             android:layout_marginBottom="10dp"
             android:text="Submit"
             android:textColor="@color/white"
-            android:textAllCaps="false"
+            android:textAllCaps="true"
             android:textSize="22dp"
             android:id="@+id/button"
             />
@@ -376,7 +383,7 @@
             android:text="Save for later"
             android:background="@drawable/white_ripple"
             android:id="@+id/schedule"
-            android:textColor="@color/black"
+            android:textColor="@color/grey"
             android:textAllCaps="false"
             android:textSize="18sp"
             />

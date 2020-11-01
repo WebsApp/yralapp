@@ -74,7 +74,7 @@
                 android:lines="5"
                 android:maxLength="5000"
                 android:id="@+id/et_text"
-                android:hint="Whats on your Mind?"
+                android:hint="@string/what_in_mind"
                 android:gravity="top"
                 android:layout_height="wrap_content"></EditText>
             <LinearLayout
@@ -115,7 +115,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:id="@+id/tag"
-                android:text="Tag User"
+                android:text="@string/tag_post_acitivity"
                 android:layout_marginLeft="@dimen/dimen5"
                 android:layout_height="wrap_content"></TextView>
         </LinearLayout>
@@ -137,20 +137,21 @@
         android:layout_margin="@dimen/dimen5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="public this Post" />
+        android:text="@string/public_sipe_post_acitivity" />
 
     <Switch
         android:id="@+id/switch1"
         android:layout_margin="@dimen/dimen5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Allow to comment" />
+        android:text="@string/allow_commnet_sipe_post_acitivity" />
     <Switch
         android:id="@+id/switch3"
         android:layout_margin="@dimen/dimen5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show my location" />
+        android:text="@string/location_commnet_sipe_post_acitivity" />
+
         <TextView
             android:layout_width="match_parent"
             android:id="@+id/location"
@@ -292,7 +293,7 @@
             android:layout_marginBottom="10dp"
             android:text="Post Now"
             android:textColor="@color/white"
-            android:textAllCaps="false"
+            android:textAllCaps="true"
             android:textSize="22dp"
             android:id="@+id/button"
             />
@@ -300,10 +301,11 @@
             android:layout_width="match_parent"
             android:layout_weight=".5"
             android:layout_height="wrap_content"
-            android:text="Schedule it"
+            android:text="Schedule my post"
             android:background="@drawable/white_ripple"
             android:id="@+id/schedule"
-            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textColor="@color/ob_header"
             android:textAllCaps="false"
             android:textSize="18sp"
             />

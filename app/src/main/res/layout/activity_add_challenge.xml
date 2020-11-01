@@ -72,7 +72,7 @@
                 android:background="@drawable/border"
                 android:maxLength="65"
                 android:id="@+id/et_title"
-                android:hint="Title"
+                android:hint="@string/challange_title"
                 android:gravity="top"
                 android:layout_height="wrap_content"></EditText>
             <LinearLayout
@@ -84,7 +84,9 @@
                     android:id="@+id/upload"
                     android:layout_width="match_parent"
                     android:src="@drawable/upload"
-                    android:layout_height="100dp"></ImageView>
+                    android:layout_height="150dp">
+
+                </ImageView>
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_weight=".3"
@@ -173,7 +175,7 @@
                 android:lines="3"
                 android:maxLength="1000"
                 android:id="@+id/et_text"
-                android:hint="Description"
+                android:hint="@string/Description_activty_chalangs"
                 android:gravity="top"
                 android:layout_height="wrap_content"></EditText>
             <LinearLayout
@@ -220,10 +222,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
+
                 android:text="Time Limit"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:textColor="@color/black"
+                android:textColor="@color/grey"
                 android:layout_marginRight="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"></TextView>
@@ -269,7 +272,7 @@
                 android:text="Age Limit"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:textColor="@color/black"
+                android:textColor="@color/grey"
                 android:layout_marginRight="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"></TextView>
@@ -279,28 +282,36 @@
                 android:max="65"
                 android:min="18"
                 android:id="@+id/seekbar"
-                android:layout_height="wrap_content"></SeekBar>
+                android:layout_height="wrap_content">
+
+            </SeekBar>
 
         </LinearLayout>
     <Switch
         android:id="@+id/switch2"
         android:layout_margin="@dimen/dimen5"
+        android:textColor="@color/grey"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="public this Post" />
+        android:text="@string/public_sipe_post_acitivity" />
 
     <Switch
         android:id="@+id/switch1"
         android:layout_margin="@dimen/dimen5"
+        android:textColor="@color/grey"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Allow to comment" />
+        android:text="@string/allow_commnet_sipe_post_acitivity" />
+
     <Switch
         android:id="@+id/switch3"
         android:layout_margin="@dimen/dimen5"
+        android:textColor="@color/grey"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show my location" />
+        android:text="@string/location_commnet_sipe_post_acitivity" />
+
+
         <TextView
             android:layout_width="match_parent"
             android:id="@+id/location"
@@ -322,7 +333,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:id="@+id/tag"
-                android:text="Tag User"
+                android:text="@string/tag_post_acitivity"
                 android:layout_marginLeft="@dimen/dimen5"
                 android:layout_height="wrap_content"></TextView>
         </LinearLayout>
@@ -337,14 +348,18 @@
             <CheckBox
                 android:id="@+id/chkTerms"
                 android:checked="true"
+                android:buttonTint="@color/tw__composer_red"
+                app:buttonTint="@color/tw__composer_red"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <TextView
                 android:id="@+id/lblTerms"
                 android:layout_width="match_parent"
+
                 android:layout_height="wrap_content"
-                android:text="i have read and agreed the terms and conditions"
+                android:text="@string/ihavered"
                 android:textColor="@color/tw__composer_red"
                 android:textSize="10dp" />
 
@@ -375,7 +390,7 @@
             android:text="Save for later"
             android:background="@drawable/white_ripple"
             android:id="@+id/schedule"
-            android:textColor="@color/black"
+            android:textColor="@color/grey"
             android:textAllCaps="false"
             android:textSize="18sp"
             />

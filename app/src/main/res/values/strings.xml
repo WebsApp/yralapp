@@ -79,6 +79,45 @@ For example, an excerpt from Pinterests Privacy Policy agreement clearly describ
     <string name="repeat_password">Repeat Password</string>
     <string name="next">NEXT</string>
     <string name="register">REGISTER</string>
+    <string name="desingdeveled">Design &amp; Developed  by Webapps</string>
+
+
+
+    <string name="loginpassword_hit">Password contains Minimum eight characters, at least one letter,one number and one special character</string>
+
+    <string name="logn_passworhint">Please Enter Correct Password</string>
+    <string name="username_hint_login">Please Enter Email ID/Phone No</string>
+
+
+    <!--acceptchalanges-->
+    <string name="join_chalanges">Join Challenge </string>
+    <string name="challange_title">Please Enter Challenge Title </string>
+    <string name="ihavered"> I have read and agreed the terms and conditions. </string>
+    <string name="Description_activty_chalangs">Please write something about chhallenge... </string>
+    <string name="Description_activty_found">Please write something about what you found  ... </string>
+
+    <!--acceptchalanges-->
+
+    <!--Add Post -->
+    <string name="what_in_mind"> Write whats going in your mind... </string>
+    <string name="tag_post_acitivity"> Tag User / Friends</string>
+    <string name="public_sipe_post_acitivity"> Public this post</string>
+    <string name="allow_commnet_sipe_post_acitivity"> Allow user to comment </string>
+    <string name="location_commnet_sipe_post_acitivity"> Show  my location </string>
+
+    <!--Forgetpassword Activity-->
+    <string name="forget_pass_page_text">Plaese Enter Phone No.You will recieve a OTP via Text.</string>
+    <string name="edt_inputtext">Please Enter Phone No or Email Id </string>
+    <string name="btn_forget_passwords">Reset Now </string>
+    <!--Forgetpassword Activity-->
+
+
+    <string name="btn_login">Login</string>
+    <string name="btn_Signup_link">New on this App Sign Up</string>
+    <string name="btn_forget_pass">Forget Password?</string>
+
+
+
 
     <string name="hint_username">Enter a new username</string>
     <string name="hint_email_reset">Enter your email</string>

@@ -18,15 +18,15 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
         <androidx.viewpager.widget.ViewPager
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="400dp"
             android:id="@+id/viewpager">
         </androidx.viewpager.widget.ViewPager>
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="280dp"
+            android:layout_height="400dp"
             android:textColor="@color/black"
             android:visibility="gone"
             android:scaleType="centerCrop"
@@ -68,7 +68,7 @@
                  android:imeOptions="actionNext"
                 android:inputType="text"
                 android:layout_gravity="center"
-                android:hint="Please Enter Email ID/Phone No"
+                android:hint="username_hint_login"
                 android:singleLine="true"
                 android:maxLength="30"
                 android:textColor="@color/black"
@@ -103,7 +103,7 @@
                 android:imeOptions="actionNext"
                 android:inputType="textPassword"
                 android:layout_gravity="center"
-                android:hint="Please Enter Correct Password"
+                android:hint="@string/logn_passworhint"
 
                 android:singleLine="true"
                 android:textColor="@color/black"
@@ -116,7 +116,7 @@
     android:layout_width="match_parent"
     android:gravity="center"
     android:layout_marginTop="10dp"
-    android:text="Password contains Minimum eight characters, at least one letter,one number and one special character"
+    android:text="@string/loginpassword_hit"
     android:layout_height="wrap_content"></TextView>
     <Button
         android:layout_width="match_parent"
@@ -126,10 +126,11 @@
         android:layout_marginRight="12dp"
         android:background="@drawable/gradient_intro_button"
         android:layout_marginBottom="24dp"
-        android:text="Login"
+        android:text="@string/btn_login"
+
         android:id="@+id/login"
         android:textColor="@color/white"
-        android:textAllCaps="false"
+        android:textAllCaps="true"
         android:textSize="18sp"
         />
 
@@ -197,7 +198,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Forget Password?"
+            android:text="@string/btn_forget_pass"
             android:textSize="18dp"
             android:textColor="@color/grey"
             />
@@ -216,10 +217,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
+            android:text="@string/btn_Signup_link"
             android:textStyle="italic"
             android:textSize="18dp"
-
             android:textColor="@color/blue"
             />
     </LinearLayout>

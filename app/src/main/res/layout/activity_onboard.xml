@@ -28,10 +28,13 @@
             android:id="@+id/btn_get_started"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="match_parent"
             android:background="@drawable/gradient_intro_button"
             android:text="@string/ob_get_started"
             android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
             android:textColor="@color/white"
             android:textSize="18dp"
             android:visibility="invisible"/>
